@@ -44,3 +44,16 @@ function lonelyinteger(a) {
     }
 }
 
+
+//binary option
+function lonelyinteger(a) {
+    let uniqueElement = 0;
+    
+    for (let num of a) {
+        uniqueElement ^= num; // XOR each element with the uniqueElement
+    }
+    
+    return uniqueElement;
+}
+
+
