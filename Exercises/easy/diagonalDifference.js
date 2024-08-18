@@ -66,3 +66,17 @@ function diagonalDifference(arr) {
 // Output Format
 
 // For each test cases, print the elements of the transformed zig zag sequence in a single line.
+
+
+function processData(n) {
+   
+   const numbers = n.split('\n')[2].split(' ')
+   const halfDivision = (numbers.length)/2
+   
+   const secondHalf = numbers.slice(halfDivision).sort((a,b) => b - a)
+    
+    const zigZag = [...numbers.slice(0, halfDivision), ...secondHalf].join(' ')
+    
+    console.log(zigZag)
+
+} 
