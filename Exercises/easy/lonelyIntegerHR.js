@@ -8,7 +8,15 @@ a = [1,2,3,4,3,2,1]
 The unique element is 4
 
 Function Description
+ = [1,2,3,4,3,2,1]
 
+The unique element is 4
+
+Function Description = [1,2,3,4,3,2,1]
+
+The unique element is 4
+
+Function Description
 Complete the lonelyinteger function in the editor below.
 
 lonelyinteger has the following parameter(s):
