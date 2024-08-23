@@ -31,6 +31,8 @@ The first line contains a single integer, , the number of integers in the array.
 The second line contains  space-separated integers that describe the values in .
 */
 
+function lonelyinteger(a) {
+    const frequencyMap = {};
 
 function lonelyinteger(a) {
     const frequencyMap = {};
