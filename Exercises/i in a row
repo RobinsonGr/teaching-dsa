@@ -1,0 +1,20 @@
+function either404(numbers) {
+    let zeroNextToZero = false;
+    let fourNextToFour = false;
+
+    for (let i = 0; i < numbers.length - 1; i++) {
+        if (numbers[i] === 0 && numbers[i + 1] === 0) {
+            zeroNextToZero = true;
+        }
+        if (numbers[i] === 4 && numbers[i + 1] === 4) {
+            fourNextToFour = true;
+        }
+
+        // If both patterns are found, return false immediately
+        if (zeroNextToZero && fourNextToFour) {
+            return false;
+        }
+    }
+
+    return zeroNextToZero || fourNextToFour;
+}
