@@ -1,0 +1,20 @@
+function gridChallenge(grid) {
+    // Write your code here
+    
+    const sortedArray = grid.map((arr2, i) => {
+       return arr2.split('').sort().join('');
+    });
+    
+    const n = sortedArray.length;
+    //i = col (string within subarray) j = rows (subarray)
+    for (let i = 0; i < n; i++){
+        //this goes directly into the data of the subarray and it compares the second with against the first
+        for(let j = 1; j < n; j++) {
+            if(sortedArray[j][i] < sortedArray[j - 1][i]){
+                return 'NO'
+            }
+        }  
+    }
+    
+    return 'YES'
+}
