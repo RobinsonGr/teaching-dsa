@@ -9,7 +9,7 @@ export default function App() {
 
   const handleCountry = (country) => {
     setSelectedCountry([]);
-    const selectingCountry = countries.find((element) => element.name);
+    const selectingCountry = countries.find((element) => element.name === country);
     setSelectedCountry(selectingCountry.cities);
     console.log(selectingCountry);
   };
