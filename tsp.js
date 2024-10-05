@@ -50,20 +50,20 @@ const distances = [
 const result = tspBruteForce(distances);
 console.log("Minimum Distance:", result.minDistance);
 console.log("Best Route:", result.bestRoute);
-Explanation
-Get Permutations: Generates all permutations of the cities.
-Calculate Distance: Computes the total distance for a given permutation of cities.
-Find Minimum Distance: Iterates over all permutations to find the one with the smallest total distance.
-Limitations
-Time Complexity: The brute-force approach has a time complexity of 
-𝑂
-(
-𝑛
-!
-)
-O(n!), making it impractical for large numbers of cities.
-Scalability: This solution is only feasible for a small number of cities (e.g., fewer than 10).
-For larger instances of TSP, consider heuristic or approximation algorithms like Genetic Algorithms, Simulated Annealing, or Ant Colony Optimization.
+// Explanation
+// Get Permutations: Generates all permutations of the cities.
+// Calculate Distance: Computes the total distance for a given permutation of cities.
+// Find Minimum Distance: Iterates over all permutations to find the one with the smallest total distance.
+// Limitations
+// Time Complexity: The brute-force approach has a time complexity of 
+// 𝑂
+// (
+// 𝑛
+// !
+// )
+// O(n!), making it impractical for large numbers of cities.
+// Scalability: This solution is only feasible for a small number of cities (e.g., fewer than 10).
+// For larger instances of TSP, consider heuristic or approximation algorithms like Genetic Algorithms, Simulated Annealing, or Ant Colony Optimization.
 
 
 
@@ -71,5 +71,3 @@ For larger instances of TSP, consider heuristic or approximation algorithms like
 
 
 
-ChatGPT can make mistakes. Check important info.
-?
