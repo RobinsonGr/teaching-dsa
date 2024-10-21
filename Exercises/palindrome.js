@@ -21,3 +21,23 @@ const checkPalindrome = (string: string): Boolean => {
 
   return false;
 };
+
+//Palindrome number
+
+function isPalindrome(x: number): boolean {
+
+    if(x < 0) {
+        return false
+    }
+
+    const integerArray = x.toString().split("").map(Number);
+    let invertedNumArray = []          
+
+    for(let i = integerArray.length - 1; i >= 0; i--){
+        invertedNumArray.push(integerArray[i])
+    }
+
+    const invertedNumber = parseInt(invertedNumArray.join(''), 10)
+    return invertedNumber === x  
+    
+};
